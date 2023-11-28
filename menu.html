@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATHAP HOTEL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background: url('beg.jpg') repeat; /* Set the background image and make it repeat */
+            background-size: cover; 
+
+            font-family: Arial, sans-serif;
+        }
+
+        h2, h3 {
+            color: #0C356A;
+        }
+
+        p {
+            color: #164B60;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .hidden {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Animation class */
+        .fade-in {
+            animation: fadeInAnimation 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Sliding Animation */
+        .slide-in {
+            animation: slideInAnimation 1s ease-in-out;
+        }
+
+        @keyframes slideInAnimation {
+            0% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .menu-item {
+            border-bottom: 1px solid #f00000;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+         
+        }
+
+        .menu-item img {
+            max-width: 100px;
+            max-height: 100px;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 id="pageTitle" class="hidden">PRATHAP HOTEL</h1>
+    </header>
+
+    <nav>
+        <a href="HOME.html" style="color:#FAE7C9">Home</a> |
+        <a href="#menu" style="color:#FAE7C9">Menu</a> |
+        <a href="#contact" style="color:#FAE7C9">Contact</a>
+    </nav>
+
+    <section id="home" class="fade-in">
+        <h2 >Welcome to our Restaurant!</h2>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+
+        <div class="menu-item">
+            <img src="poori.jpg" alt="parrota">
+            <div>
+                <h3>POORI</h3>
+                <p>  A crispy, fluffy flatbread paired with a rich, savory gravy</p>
+                <p>₹40</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="1.jpg" alt="parrota">
+            <div>
+                <h3>PAROTTA</h3>
+                <p> Every bite unfolds a symphony of authentic flavors</p>
+                <p>₹20</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="DOSA.jpg" alt="dosa">
+            <div>
+                <h3>DOSA</h3>
+                <p> A crisp, golden delight of taste in every bite</p>
+                <p>₹40</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="PARROTA.jpg" alt="kothu parrota">
+            <div>
+                <h3>KOTHU PAROTTA</h3>
+                <p>Authentic kothu parotta with fresh ingredients.</p>
+                <p>₹70</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="briyani.jpg" alt="briyani ">
+            <div>
+                <h3>Chicken Briyani</h3>
+                <p>Indulge in the aromatic perfection of our Chicken Biryani</p>
+                <p>₹140</p>
+            </div>
+        </div>
+
+       
+        <div class="menu-item">
+            <img src="meals.jpg" alt="meals">
+            <div>
+                <h3>Unlimited meals</h3>
+                <p>Experience the soulful symphony of flavors with our South Indian Meals</p>
+                <p>₹80</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="gravy.jpg" alt="Gravy">
+            <div>
+                <h3>Chicken Gravy</h3>
+                <p>Savor the rich and flavorful experience with our Chicken Gravy</p>
+                <p>₹80</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="crab.jpg" alt="Gravy">
+            <div>
+                <h3>CRAB Gravy</h3>
+                <p>Crab gravy is the perfect way to elevate your seafood dishes</p>
+                <p>₹60</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="fish.jpg" alt="Gravy">
+            <div>
+                <h3>FISH Gravy</h3>
+                <p>A taste of the sea in every bite</p>
+                <p>₹50</p>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="vazhai.jpg" alt="Gravy">
+            <div>
+                <h3>VAZHAI ILAI PAROTTA</h3>
+                <p>The soft, fluffy layers of parotta with rich flavor</p>
+                <p>₹50</p>
+            </div>
+        </div>
+
+
+       
+    </section>
+
+  
+    <script>
+        // Your JavaScript code here
+        document.addEventListener("DOMContentLoaded", function () {
+            // Show the title with fade-in animation
+            document.getElementById("pageTitle").classList.remove("hidden");
+
+      
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRATHAP HOTEL</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin-left: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: url('beg.jpg') repeat; /* Set the background image and make it repeat */
+            background-size: cover; 
+
+            font-family: Arial, sans-serif; 
+        }
+
+        header {
+      height: 50vh;
+      
+      background-image: url("bgb.jpg");
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: #fff;
+      padding:1em;
+      font-family: sans-serif;
+    }
+
+    .header-text {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 48px;
+      font-weight: bold;
+      animation: animate-header 5s ease-in-out infinite;
+    }
+
+    @keyframes animate-header {
+      0% {
+        transform: translateY(-50%) rotate(0deg);
+      }
+      25% {
+        transform: translateY(-50%) rotate(10deg);
+      }
+      50% {
+        transform: translateY(-50%) rotate(-10deg);
+      }
+      75% {
+        transform: translateY(-50%) rotate(10deg);
+      }
+      100% {
+        transform: translateY(-50%) rotate(0deg);
+      }
+    }
+
+        
+
+        nav {
+            background-color: #444;
+            color: #FAE7C9;
+            text-align: center;
+            padding: 0.5em;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        #menu {
+            background-color: #f9f9f9;
+            padding: 40px;
+        }
+
+        #contact {
+            background-color: #333;
+            color: #fff;
+            padding: 40px;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        h1, h2 {
+            color: #0C356A;
+        }
+
+        p {
+            color: #164B60;
+        }
+
+        
+        /* Animation class */
+        .fade-in {
+            animation: fadeInAnimation 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .menu-item img {
+            max-width: 100px;
+            max-height: 100px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .testimonials {
+    padding: 50px 0;
+}
+
+.testimonials-carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.testimonial-item {
+    margin: 0 20px;
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.customer-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.testimonial-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testimonial-controls button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+        #contact {
+             padding: 40px;
+}
+
+        #contact h2 {
+            font-size: 24px;
+             font-weight: bold;
+             margin-bottom: 20px;
+}
+
+#contact p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+#contact label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact input,
+#contact textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#contact textarea {
+  height: 100px;
+}
+
+#contact button {
+  background-color: #007bff;
+  color: #fff;
+  width: 50%;
+  padding: 10px 20px;
+  border: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-text">
+          PRATHAP HOTEL
+        </div>
+      </header>
+
+   
+
+    <nav>
+        <a >Home</a> |
+        <a href="menu.html" style="color:#FAE7C9">Menu</a> |
+        <a >Contact</a>
+    </nav>
+
+    <section id="home" class="fade-in">
+        <h2><b>Welcome to Prathap Hotel!</b></h2>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>PRATHAP HOTEL is a family-owned and operated establishment dedicated to providing our guests with an exceptional dining experience. We use fresh, locally sourced ingredients to create dishes that are both delicious and visually appealing. Our warm and inviting atmosphere makes us the perfect place for any occasion.</p>
+          </section>
+        <a href="menu.html"><button>View Menu</button></a>
+    </section>
+
+    <section class="testimonials">
+      <h2>Customer Testimonials</h2>
+  
+      <div class="testimonials-carousel">
+          <div class="testimonial-item">
+              <img src="images/customer1.jpg" alt="Customer 1" class="customer-image">
+              <div class="testimonial-text">
+                  <p>"From the moment I stepped into Prathap Hotel, I was captivated by the warm and inviting atmosphere. The service was impeccable, and the food was absolutely divine. I highly recommend this restaurant to anyone seeking an authentic Indian dining experience."</p>
+                  <span>- KISHORE J.</span>
+              </div>
+          </div>
+  
+          <div class="testimonial-item">
+              <img src="images/customer2.jpg" alt="Customer 2" class="customer-image">
+              <div class="testimonial-text">
+                  <p>"I've been a loyal customer of Prathap Hotel for years, and I've never been disappointed. The food is consistently delicious, the portions are generous, and the prices are very reasonable. I can't imagine going anywhere else for my Indian food fix."</p>
+                  <span>- Preethi T M.</span>
+              </div>
+          </div>
+  
+          <div class="testimonial-item">
+              <img src="images/customer3.jpg" alt="Customer 3" class="customer-image">
+              <div class="testimonial-text">
+                  <p>"If you're looking for a taste of India, look no further than Prathap Hotel. The menu features a wide variety of dishes, from classic favorites to more adventurous options. Everything I've tried has been absolutely delicious. I highly recommend this restaurant to anyone who loves Indian food."</p>
+                  <span>- MONISHA .</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="testimonial-controls">
+          <button class="prev">Previous</button>
+          <button class="next">Next</button>
+      </div>
+  </section>
+  
+
+   
+
+        
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Please feel free to contact us using the form below.</p>
+        <form action="#" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+            
+        }
+
+        const carouselItems = document.querySelectorAll('.testimonial-item');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+
+let currentIndex = 0;
+
+function showTestimonial(index) {
+    for (let i = 0; i < carouselItems.length; i++) {
+        if (i === index) {
+            carouselItems[i].style.display = 'block';
+        } else {
+            carouselItems[i].style.display = 'none';
+        }
+    }
+}
+
+showTestimonial(currentIndex);
+
+prevButton.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        showTestimonial(currentIndex);
+    }
+});
+
+nextButton.addEventListener('click', () => {
+    if (currentIndex < carouselItems.length - 1) {
+        currentIndex++;
+        showTestimonial(currentIndex);
+    }
+});
+
+
+    </script>
+
+</body>
+</html>
